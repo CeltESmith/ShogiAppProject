@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShogiLogic
+﻿namespace ShogiLogic
 {
     public class Position
     {
@@ -46,6 +40,11 @@ namespace ShogiLogic
         public static bool operator !=(Position left, Position right)
         {
             return !(left == right);
+        }
+
+        public static Position operator + (Position pos, Direction dir)
+        {
+            return new Position(pos.RowY + dir.RowYDelta, pos.ColumnX + dir.ColumnXDelta);
         }
     }
 }
