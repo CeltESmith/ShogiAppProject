@@ -10,6 +10,8 @@ namespace ShogiLogic
     {
         public abstract PieceType Type { get; }
         public abstract Player Color { get; }
-        public bool HasMoverd { get; set; } = false;
+        public bool HasMoved { get; set; } = false;
+
+        public abstract Piece Copy();
     }
 }
