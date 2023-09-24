@@ -10,10 +10,10 @@ namespace ShogiUI
     {
         private static readonly Dictionary<PieceType, ImageSource> whiteSources = new()
         {
-            {PieceType.Lance, LoadImage("Assets/PawnW.png") },
+            {PieceType.Lance, LoadImage("Assets/LanceW.png") },
             {PieceType.Knight, LoadImage("Assets/KnightW.png") },
-            {PieceType.SilverGeneral, LoadImage("Assets/PawnW.png") },
-            {PieceType.GoldGeneral, LoadImage("Assets/PawnW.png") },
+            {PieceType.SilverGeneral, LoadImage("Assets/SilverGeneralW.png") },
+            {PieceType.GoldGeneral, LoadImage("Assets/GoldGeneralW.png") },
             {PieceType.King, LoadImage("Assets/KingW.png") },
             {PieceType.Bishop, LoadImage("Assets/BishopW.png") },
             {PieceType.Rook, LoadImage("Assets/RookW.png") },
@@ -22,10 +22,10 @@ namespace ShogiUI
 
         private static readonly Dictionary<PieceType, ImageSource> blackSources = new()
         {
-            {PieceType.Lance, LoadImage("Assets/PawnB.png") },
+            {PieceType.Lance, LoadImage("Assets/LanceB.png") },
             {PieceType.Knight, LoadImage("Assets/KnightB.png") },
-            {PieceType.SilverGeneral, LoadImage("Assets/PawnB.png") },
-            {PieceType.GoldGeneral, LoadImage("Assets/PawnB.png") },
+            {PieceType.SilverGeneral, LoadImage("Assets/SilverGeneralB.png") },
+            {PieceType.GoldGeneral, LoadImage("Assets/GoldGeneralB.png") },
             {PieceType.King, LoadImage("Assets/KingB.png") },
             {PieceType.Bishop, LoadImage("Assets/BishopB.png") },
             {PieceType.Rook, LoadImage("Assets/RookB.png") },
