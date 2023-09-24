@@ -12,18 +12,22 @@
     <None Remove="Assets\BishopW.png" />
     <None Remove="Assets\CursorB.cur" />
     <None Remove="Assets\CursorW.cur" />
+    <None Remove="Assets\GoldGeneralB.png" />
+    <None Remove="Assets\GoldGeneralW.png" />
     <None Remove="Assets\icon.ico" />
     <None Remove="Assets\KingB.png" />
     <None Remove="Assets\KingW.png" />
     <None Remove="Assets\KnightB.png" />
     <None Remove="Assets\KnightW.png" />
+    <None Remove="Assets\LanceB.png" />
+    <None Remove="Assets\LanceW.png" />
     <None Remove="Assets\PawnB.png" />
     <None Remove="Assets\PawnW.png" />
-    <None Remove="Assets\QueenB.png" />
-    <None Remove="Assets\QueenW.png" />
     <None Remove="Assets\RookB.png" />
     <None Remove="Assets\RookW.png" />
     <None Remove="Assets\ShogiBoard.png" />
+    <None Remove="Assets\SilverGeneralB.png" />
+    <None Remove="Assets\SilverGeneralW.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,18 +39,22 @@
     <Resource Include="Assets\BishopW.png" />
     <Resource Include="Assets\CursorB.cur" />
     <Resource Include="Assets\CursorW.cur" />
+    <Resource Include="Assets\GoldGeneralB.png" />
+    <Resource Include="Assets\GoldGeneralW.png" />
     <Resource Include="Assets\icon.ico" />
     <Resource Include="Assets\KingB.png" />
     <Resource Include="Assets\KingW.png" />
     <Resource Include="Assets\KnightB.png" />
     <Resource Include="Assets\KnightW.png" />
+    <Resource Include="Assets\LanceB.png" />
+    <Resource Include="Assets\LanceW.png" />
     <Resource Include="Assets\PawnB.png" />
     <Resource Include="Assets\PawnW.png" />
-    <Resource Include="Assets\QueenB.png" />
-    <Resource Include="Assets\QueenW.png" />
     <Resource Include="Assets\RookB.png" />
     <Resource Include="Assets\RookW.png" />
     <Resource Include="Assets\ShogiBoard.png" />
+    <Resource Include="Assets\SilverGeneralB.png" />
+    <Resource Include="Assets\SilverGeneralW.png" />
   </ItemGroup>
 
 </Project>
