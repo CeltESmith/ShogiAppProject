@@ -5,11 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShogiUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="675" Width="675"
-        Icon="Assets/icon.ico">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Assets/ShogiBoard.png"/>
-        </Grid.Background>
-    </Grid>
+        Title="Shogi" Height="675" Width="675" SizeToContent="Height"
+        Icon="Assets/icon.ico"
+        WindowStartupLocation="CenterScreen"
+        Background="#101010">
+    <Viewbox>
+        <Grid x:Name="BoardGrid" Width="675" Height="675">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/ShogiBoard.png"/>
+            </Grid.Background>
+
+            <UniformGrid x:Name="PieceGrid" Rows="9" Columns="9" RenderOptions.BitmapScalingMode="HighQuality">
+                
+            </UniformGrid>
+        </Grid>
+    </Viewbox>
 </Window>
