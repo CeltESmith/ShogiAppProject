@@ -31,7 +31,8 @@ namespace ShogiLogic.Pieces
             return copy;
         }
 
-        public override IEnumerable<Move> GetMoves(Position from, Board board)
+
+    public override IEnumerable<Move> GetMoves(Position from, Board board)
         {
             return MovePositionsInDirs(from, board, dirs).Select(to => new NormalMove(from, to));
         }
