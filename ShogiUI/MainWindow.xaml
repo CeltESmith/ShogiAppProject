@@ -10,12 +10,21 @@
         WindowStartupLocation="CenterScreen"
         Background="#101010">
     <Viewbox>
-        <Grid x:Name="BoardGrid" Width="675" Height="675">
+        <Grid x:Name="BoardGrid" Width="675" Height="675" MouseDown="BoardGrid_MouseDown">
             <Grid.Background>
                 <ImageBrush ImageSource="Assets/ShogiBoard.png"/>
             </Grid.Background>
 
-            <UniformGrid x:Name="PieceGrid" Rows="9" Columns="9" RenderOptions.BitmapScalingMode="HighQuality">
+            <UniformGrid x:Name="HighlightGrid"
+                         Rows="9"
+                         Columns="9">
+                
+            </UniformGrid>
+
+            <UniformGrid x:Name="PieceGrid" 
+                         Rows="9" 
+                         Columns="9" 
+                         RenderOptions.BitmapScalingMode="HighQuality">
                 
             </UniformGrid>
         </Grid>
