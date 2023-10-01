@@ -55,5 +55,10 @@ namespace ShogiLogic
         {
             return ForwardMove(from, board);
         }
-    }
+
+		//public override bool CanCaptureOpponentKing(Position from, Board board)
+		//{
+		//	return base.CanCaptureOpponentKing(from, board);
+		//}
+	}
 }
