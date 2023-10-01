@@ -42,29 +42,38 @@ namespace ShogiLogic
             return dirs.SelectMany(dir => MovePositionsInDir(from, board, dir));
         }
 
-        protected IEnumerable<Position> MoveMulti(Position from, Board board, Direction[] dirs, Direction dir)
+        public virtual bool CanCaptureOpponentKing(Position from, Board board)
         {
-
-            for (Position pos = from + dir; Board.IsInside(pos); pos += dir)
+            return GetMoves(from, board).Any(move =>
             {
-                if (board.IsEmpty(pos))
-                {
-                    yield return pos;
-                    continue;
-                }
-
-                Piece piece = board[pos];
-
-                if (piece.Color != Color)
-                {
-                    yield return pos;
-                }
-
-                yield break;
-            }
-
-            IEnumerable<Position> pos2 = dirs.SelectMany(dir => MovePositionsInDir(from, board, dir));
-            yield return (Position)pos2;
+                Piece piece = board[move.ToPos];
+                return piece != null && piece.Type == PieceType.King;
+            });
         }
+
+        //protected IEnumerable<Position> MoveMulti(Position from, Board board, Direction[] dirs, Direction dir)
+        //{
+
+        //    for (Position pos = from + dir; Board.IsInside(pos); pos += dir)
+        //    {
+        //        if (board.IsEmpty(pos))
+        //        {
+        //            yield return pos;
+        //            continue;
+        //        }
+
+        //        Piece piece = board[pos];
+
+        //        if (piece.Color != Color)
+        //        {
+        //            yield return pos;
+        //        }
+
+        //        yield break;
+        //    }
+
+        //    IEnumerable<Position> pos2 = dirs.SelectMany(dir => MovePositionsInDir(from, board, dir));
+        //    yield return (Position)pos2;
+        //}
     }
 }
