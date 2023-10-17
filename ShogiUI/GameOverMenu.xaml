@@ -23,6 +23,8 @@
 
             <TextBlock Grid.Row="1" Grid.ColumnSpan="2" x:Name="ReasonText" Text="REASON TEXT" Style="{StaticResource TextStyle}" FontSize="16"/>
 
+            <Button Grid.Row="3" Grid.Column="0" Content="RESTART" Style="{StaticResource ButtonStyle}" Width="80" Height="30" Click="Exit_Click"/>
+
             <Button Grid.Row="2" Grid.Column="1" Content="EXIT" Style="{StaticResource ButtonStyle}" Width="80" Height="30" Click="Exit_Click"/>
         </Grid>
     </Border>
